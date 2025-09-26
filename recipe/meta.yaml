@@ -9,7 +9,7 @@ source:
   sha256: f63a56239a0923df5315202c2ebeaaeb24e00db2338d5bf0cd41e6585121d5d4
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: geoarrow-rust-core
