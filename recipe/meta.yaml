@@ -1,4 +1,4 @@
-{% set version = "0.5.3" %}
+{% set version = "0.6.2" %}
 
 package:
   name: geoarrow-rust-python-modules
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/geoarrow/geoarrow-rs/archive/refs/tags/py-v{{ version }}.tar.gz
-  sha256: f63a56239a0923df5315202c2ebeaaeb24e00db2338d5bf0cd41e6585121d5d4
+  sha256: 68e0db3c5752dbe913a6d2a10e8e5e90cf7dc4cfca6ebdc0cb196d0b084271a4
 
 build:
-  number: 1
+  number: 0
 
 outputs:
   - name: geoarrow-rust-core
