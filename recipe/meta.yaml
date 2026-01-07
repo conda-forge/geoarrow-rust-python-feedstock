@@ -70,8 +70,8 @@ outputs:
         - pip
 
   - name: geoarrow-rust-compute
-    script: build-pkg-io.sh  # [not win]
-    script: build-pkg-io.bat  # [win]
+    script: build-pkg-compute.sh  # [not win]
+    script: build-pkg-compute.bat  # [win]
     requirements:
       build:
         - python                                 # [build_platform != target_platform]
