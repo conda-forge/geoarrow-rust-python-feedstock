@@ -148,6 +148,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-geoarrow--rust--compute-green.svg)](https://anaconda.org/conda-forge/geoarrow-rust-compute) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/geoarrow-rust-compute.svg)](https://anaconda.org/conda-forge/geoarrow-rust-compute) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/geoarrow-rust-compute.svg)](https://anaconda.org/conda-forge/geoarrow-rust-compute) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/geoarrow-rust-compute.svg)](https://anaconda.org/conda-forge/geoarrow-rust-compute) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-geoarrow--rust--core-green.svg)](https://anaconda.org/conda-forge/geoarrow-rust-core) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/geoarrow-rust-core.svg)](https://anaconda.org/conda-forge/geoarrow-rust-core) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/geoarrow-rust-core.svg)](https://anaconda.org/conda-forge/geoarrow-rust-core) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/geoarrow-rust-core.svg)](https://anaconda.org/conda-forge/geoarrow-rust-core) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-geoarrow--rust--io-green.svg)](https://anaconda.org/conda-forge/geoarrow-rust-io) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/geoarrow-rust-io.svg)](https://anaconda.org/conda-forge/geoarrow-rust-io) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/geoarrow-rust-io.svg)](https://anaconda.org/conda-forge/geoarrow-rust-io) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/geoarrow-rust-io.svg)](https://anaconda.org/conda-forge/geoarrow-rust-io) |
 
@@ -161,41 +162,41 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `geoarrow-rust-core, geoarrow-rust-io` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `geoarrow-rust-compute, geoarrow-rust-core, geoarrow-rust-io` can be installed with `conda`:
 
 ```
-conda install geoarrow-rust-core geoarrow-rust-io
-```
-
-or with `mamba`:
-
-```
-mamba install geoarrow-rust-core geoarrow-rust-io
-```
-
-It is possible to list all of the versions of `geoarrow-rust-core` available on your platform with `conda`:
-
-```
-conda search geoarrow-rust-core --channel conda-forge
+conda install geoarrow-rust-compute geoarrow-rust-core geoarrow-rust-io
 ```
 
 or with `mamba`:
 
 ```
-mamba search geoarrow-rust-core --channel conda-forge
+mamba install geoarrow-rust-compute geoarrow-rust-core geoarrow-rust-io
+```
+
+It is possible to list all of the versions of `geoarrow-rust-compute` available on your platform with `conda`:
+
+```
+conda search geoarrow-rust-compute --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search geoarrow-rust-compute --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search geoarrow-rust-core --channel conda-forge
+mamba repoquery search geoarrow-rust-compute --channel conda-forge
 
-# List packages depending on `geoarrow-rust-core`:
-mamba repoquery whoneeds geoarrow-rust-core --channel conda-forge
+# List packages depending on `geoarrow-rust-compute`:
+mamba repoquery whoneeds geoarrow-rust-compute --channel conda-forge
 
-# List dependencies of `geoarrow-rust-core`:
-mamba repoquery depends geoarrow-rust-core --channel conda-forge
+# List dependencies of `geoarrow-rust-compute`:
+mamba repoquery depends geoarrow-rust-compute --channel conda-forge
 ```
 
 
